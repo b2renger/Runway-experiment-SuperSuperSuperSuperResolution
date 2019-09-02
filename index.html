@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<!--
+    use fancybox : ? http://fancyapps.com/fancybox/#examples
+    add categories relative to content
+
+
+    bulma modal image
+    https://codepen.io/anon/pen/KRaqxG-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        #header {
+            text-align: center;
+            background: #d37c24;
+        }
+
+        .item img {
+            filter: grayscale(100%);
+            transition: all 0.5s ease;
+            flex-direction: column;
+        }
+
+        .item img:hover {
+            filter: grayscale(0%);
+
+        }
+
+        .item h3:hover {
+            filter: grayscale(0%);
+            transform: scale(1.095);
+        }
+
+        .is-horizontal-center {
+            justify-content: center;
+        }
+
+        li {
+            list-style-type: circle;
+        }
+    </style>
+
+    <script>
+        var legos;
+        $(document).ready(function () {
+            $.getJSON("data.json", function (data) {
+                //legos = data.stories;
+                data.stories = shuffle(data.stories)
+
+                $.each(data.stories, function (indexInArray, story) {
+                    var myColumn = $(
+                        '<div class="item column is-3 content" class ="modal" data-id="' +
+                        indexInArray + '"></div>');
+                    myColumn.append('<h3>' + story.title + '</h3>');
+
+                    $.each(story.categories, function (indexInArray, category) {
+                        myColumn.addClass(category);
+                        myColumn.append('<span class="tag is-info">' + category +
+                            '</span> ');
+                        myColumn.append('<h3></h3>');
+                    });
+
+                    if (story.data) {
+                        if (story.data.length > 0) {
+                            for (var i = 0; i < story.data.length; i++) {
+                                // deal with image with modal popup
+                                if (story.data[i].src) {
+                                    myColumn.append(
+                                        '<a href="#modal" class="openlink"> <!-- opens the modal dialog -->' +
+                                        '<img src="' + story.data[i].src + '" />' +
+                                        '</a>'
+                                    )
+                                }
+                                // deal with txt
+                                else if (story.data[i].txt) {
+                                    myColumn.append('<p>' + story.data[i].txt + '</p>');
+                                    myColumn.append('<br></br>');
+                                }
+
+                            }
+
+                        }
+                    }
+                    $('#app').append(myColumn);
+                });
+            });
+
+            // deal with clicks on categories
+            $('#categories a').on('click', function (e) {
+                e.preventDefault();
+                $(this).toggleClass('is-active is-info');
+                updateContent();
+            });
+
+            // open modal popups
+            $(document).on("click", ".openlink", function () {
+                var imagePath = $(this).find("img").attr("src");
+                $(".modal").addClass("is-active");
+                document.getElementById("selectedImage").src = imagePath
+            });
+
+            // close modal popups
+            $(".modal-close").click(function () { // with cross
+                $(".modal").removeClass("is-active");
+            });
+            $(".modal-background").click(function () { // click the background to close
+                $(".modal").removeClass("is-active");
+            });
+        });
+
+        // update content when categories are clicked - show or hide elements according to '.is-active' taf
+        function updateContent() {
+            console.clear();
+            $('.item').hide();
+            $.each($('#categories .is-active'), function (indexInArray, currentCategories) {
+                console.log(indexInArray + ' ' + $(this).data('category'));
+                if ($(this).data('category') == 'all') {
+                    $('.item').show();
+                }
+                $('.' + $(this).data('category')).show();
+            });
+        }
+
+        function shuffle(array) {
+            let counter = array.length;
+
+            // While there are elements in the array
+            while (counter > 0) {
+                // Pick a random index
+                let index = Math.floor(Math.random() * counter);
+
+                // Decrease counter by 1
+                counter--;
+
+                // And swap the last element with it
+                let temp = array[counter];
+                array[counter] = array[index];
+                array[index] = temp;
+            }
+
+            return array;
+        }
+    </script>
+</head>
+
+<body>
+
+    <!--<section id="header"><img src="solo-group.png" alt=""></section>-->
+
+    <section class="section">
+
+        <div class="container">
+            <p>This page shows the results of experiments using <a href="https://runwayapp.ai/">Runway</a>.
+                The principle is to test how super resolution models can be used to create new images. </p>
+            <br></br>
+            <p> I used the <a href="https://idealo.github.io/image-super-resolution/">ISR</a> model available in Runway
+                :
+                I created a chain of four instances of this model to feed the previous output to the next model, thus
+                scaling the image by a factor 16 !</p>
+            <br></br>
+            <ul>I used two kind of images as input :
+                <ul>
+                    <li>images from the <a href="https://www.cs.toronto.edu/~kriz/cifar.html">cifar database</a>, those
+                        images are used to train image segmentation or descriptive models, it is a bank of low
+                        resolution
+                        images(about 32x32px) </li>
+                    <li> photos I've taken with my smaprthone and downsized using <a
+                            href="https://ffmpeg.org/">ffmpeg</a>
+                    </li>
+                </ul>
+            </ul>
+            <br></br>
+            <div id="categories">
+                <a href="#" class="button is-active is-info" data-category="all">ALL</a>
+                <a href="#" class="button" data-category="cifar">images from cifar</a>
+                <a href="#" class="button" data-category="photo">downsized photos</a>
+                <a href="#" class="button" data-category="animal">animals</a>
+                <a href="#" class="button" data-category="insect">insects</a>
+                <a href="#" class="button" data-category="vegetal">vegtation</a>
+                <a href="#" class="button" data-category="landscape">landscapes</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline has-text-centered" id="app"></div>
+        </div>
+    </section>
+
+    <!-- modal popup structure-->
+    <div class="modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge is-image is-flex is-horizontal-center">
+            <img id="selectedImage" src="" alt="">
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+</body>
+
+</html>

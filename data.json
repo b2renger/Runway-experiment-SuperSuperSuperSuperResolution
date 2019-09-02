@@ -1,0 +1,497 @@
+{
+    "name": "My categories",
+    "stories": [
+
+        {
+            "title" : "Beetle",
+            "data": [
+            {
+                "src": "./assets/cifar/beetle/train_index_00420.png"
+            }, {
+                "txt": "orginal"
+            },  {
+                "src": "./assets/cifar/beetle/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/cifar/beetle/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/cifar/beetle/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/cifar/beetle/x16.png"
+            }, {
+                "txt": "x16"
+            }
+        ],
+            "categories": [
+                "cifar", "animal", "insect"
+            ]
+        },
+        
+        {
+            "title" : "Butterfly",
+            "data": [
+            {
+                "src": "./assets/cifar/butterfly/train_index_03906.png"
+            }, {
+                "txt": "orginal"
+            },  {
+                "src": "./assets/cifar/butterfly/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/cifar/butterfly/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/cifar/butterfly/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/cifar/butterfly/x16.png"
+            }, {
+                "txt": "x16"
+            }
+        ],
+            "categories": [
+                "cifar", "animal", "insect"
+            ]
+        }, 
+        
+        {
+            "title" : "Fish",
+            "data": [
+            {
+                "src": "./assets/cifar/fish/train_index_01808.png"
+            }, {
+                "txt": "orginal"
+            },  {
+                "src": "./assets/cifar/fish/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/cifar/fish/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/cifar/fish/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/cifar/fish/x16.png"
+            }, {
+                "txt": "x16"
+            }
+        ],
+            "categories": [
+                "cifar", "animal"
+            ]
+        },
+        
+        {
+            "title" : "Horse",
+            "data": [
+            {
+                "src": "./assets/cifar/horse/data_batch_1_index_0068.png"
+            }, {
+                "txt": "orginal"
+            },  {
+                "src": "./assets/cifar/horse/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/cifar/horse/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/cifar/horse/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/cifar/horse/x16.png"
+            }, {
+                "txt": "x16"
+            }
+        ],
+            "categories": [
+                "cifar", "animal"
+            ]
+        },
+        
+        {
+            "title" : "Landscape",
+            "data": [
+            {
+                "src": "./assets/cifar/landscape/train_index_00462.png"
+            }, {
+                "txt": "orginal"
+            },  {
+                "src": "./assets/cifar/landscape/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/cifar/landscape/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/cifar/landscape/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/cifar/landscape/x16.png"
+            }, {
+                "txt": "x16"
+            }
+        ],
+            "categories": [
+                "cifar", "landscape"
+            ]
+        },
+        
+        {
+            "title" : "Orchid",
+            "data": [
+            {
+                "src": "./assets/cifar/orchid/train_index_00456.png"
+            }, {
+                "txt": "orginal"
+            },  {
+                "src": "./assets/cifar/orchid/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/cifar/orchid/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/cifar/orchid/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/cifar/orchid/x16.png"
+            }, {
+                "txt": "x16"
+            }
+        ],
+            "categories": [
+                "cifar", "vegetal"
+            ]
+        },
+        
+        {
+            "title" : "Whale",
+            "data": [
+            {
+                "src": "./assets/cifar/whale/train_index_01714.png"
+            }, {
+                "txt": "orginal"
+            },  {
+                "src": "./assets/cifar/whale/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/cifar/whale/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/cifar/whale/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/cifar/whale/x16.png"
+            }, {
+                "txt": "x16"
+            }
+        ],
+            "categories": [
+                "cifar", "animal"
+            ]
+        },
+        
+        {
+            "title" : "Willow Tree",
+            "data": [
+            {
+                "src": "./assets/cifar/willow_tree/train_index_02543.png"
+            }, {
+                "txt": "orginal"
+            },  {
+                "src": "./assets/cifar/willow_tree/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/cifar/willow_tree/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/cifar/willow_tree/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/cifar/willow_tree/x16.png"
+            }, {
+                "txt": "x16"
+            }
+        ],
+            "categories": [
+                "cifar", "vegetal"
+            ]
+        },
+        
+        {
+            "title" : "City sky from my window",
+            "data": [
+            {
+                "src": "./assets/downsized_photos/01/lowres.jpg"
+            }, {
+                "txt": "orginal downsized"
+            },  {
+                "src": "./assets/downsized_photos/01/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/downsized_photos/01/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/downsized_photos/01/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/downsized_photos/01/x16.png"
+            }, {
+                "txt": "x16"
+            },
+            {
+                "src": "./assets/downsized_photos/01/hires.jpg"
+            }, {
+                "txt": "original hires"
+            }
+
+        ],
+            "categories": [
+                "photo", "landscape"
+            ]
+        },
+        
+        {
+            "title" : "Beach Pléneuf Val-André",
+            "data": [
+            {
+                "src": "./assets/downsized_photos/02/lowres.jpg"
+            }, {
+                "txt": "orginal downsized"
+            },  {
+                "src": "./assets/downsized_photos/02/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/downsized_photos/02/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/downsized_photos/02/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/downsized_photos/02/x16.png"
+            }, {
+                "txt": "x16"
+            },
+            {
+                "src": "./assets/downsized_photos/02/hires.jpg"
+            }, {
+                "txt": "original hires"
+            }
+
+        ],
+            "categories": [
+                "photo", "landscape"
+            ]
+        }, 
+        
+        {
+            "title" : "Kites",
+            "data": [
+            {
+                "src": "./assets/downsized_photos/03/lowres.jpg"
+            }, {
+                "txt": "orginal downsized"
+            },  {
+                "src": "./assets/downsized_photos/03/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/downsized_photos/03/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/downsized_photos/03/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/downsized_photos/03/x16.png"
+            }, {
+                "txt": "x16"
+            },
+            {
+                "src": "./assets/downsized_photos/03/hires.jpg"
+            }, {
+                "txt": "original hires"
+            }
+
+        ],
+            "categories": [
+                "photo", "landscape"
+            ]
+        },
+        
+        {
+            "title" : "Stairs to the beach",
+            "data": [
+            {
+                "src": "./assets/downsized_photos/04/lowres.jpg"
+            }, {
+                "txt": "orginal downsized"
+            },  {
+                "src": "./assets/downsized_photos/04/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/downsized_photos/04/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/downsized_photos/04/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/downsized_photos/04/x16.png"
+            }, {
+                "txt": "x16"
+            },
+            {
+                "src": "./assets/downsized_photos/04/hires.jpg"
+            }, {
+                "txt": "original hires"
+            }
+
+        ],
+            "categories": [
+                "photo", "landscape"
+            ]
+        },
+        
+        {
+            "title" : "Nightime city view",
+            "data": [
+            {
+                "src": "./assets/downsized_photos/05/lowres.jpg"
+            }, {
+                "txt": "orginal downsized"
+            },  {
+                "src": "./assets/downsized_photos/05/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/downsized_photos/05/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/downsized_photos/05/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/downsized_photos/05/x16.png"
+            }, {
+                "txt": "x16"
+            },
+            {
+                "src": "./assets/downsized_photos/05/hires.jpg"
+            }, {
+                "txt": "original hires"
+            }
+
+        ],
+            "categories": [
+                "photo", "landscape"
+            ]
+        },
+        
+        {
+            "title" : "City view river reflection",
+            "data": [
+            {
+                "src": "./assets/downsized_photos/06/lowres.jpg"
+            }, {
+                "txt": "orginal downsized"
+            },  {
+                "src": "./assets/downsized_photos/06/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/downsized_photos/06/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/downsized_photos/06/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/downsized_photos/06/x16.png"
+            }, {
+                "txt": "x16"
+            },
+            {
+                "src": "./assets/downsized_photos/06/hires.jpg"
+            }, {
+                "txt": "original hires"
+            }
+
+        ],
+            "categories": [
+                "photo", "landscape"
+            ]
+        },
+        
+        {
+            "title" : "Beach Pléneuf Val-André 2",
+            "data": [
+            {
+                "src": "./assets/downsized_photos/07/lowres.jpg"
+            }, {
+                "txt": "orginal downsized"
+            },  {
+                "src": "./assets/downsized_photos/07/x2.png"
+            }, {
+                "txt": "x2"
+            },   {
+                "src": "./assets/downsized_photos/07/x4.png"
+            }, {
+                "txt": "x4"
+            },   {
+                "src": "./assets/downsized_photos/07/x8.png"
+            }, {
+                "txt": "x8"
+            },  {
+                "src": "./assets/downsized_photos/07/x16.png"
+            }, {
+                "txt": "x16"
+            },
+            {
+                "src": "./assets/downsized_photos/07/hires.jpg"
+            }, {
+                "txt": "original hires"
+            }
+
+        ],
+            "categories": [
+                "photo", "landscape"
+            ]
+        }
+    ]
+}
